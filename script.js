@@ -47,7 +47,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all project cards and timeline items
-document.querySelectorAll('.project-card, .timeline-item, .education-card').forEach(el => {
+document.querySelectorAll('.project-card, .timeline-item, .education-card, .award-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'all 0.6s ease';
