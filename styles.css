@@ -343,6 +343,9 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-items: center;
 }
 
 .project-card {
@@ -355,6 +358,8 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
 }
 
 .project-card:hover {
@@ -363,7 +368,8 @@ html {
 }
 
 .project-card.featured {
-    grid-column: span 2;
+    grid-column: 1 / -1;
+    max-width: 100%;
 }
 
 .project-badge {
